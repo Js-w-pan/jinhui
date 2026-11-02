@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>金汇 · 网站访问测试</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;color:#193e31;background:#f0f5ef}*{box-sizing:border-box}body{margin:0;padding:clamp(20px,5vw,70px) 18px}main{max-width:760px;margin:auto}.brand{display:flex;align-items:center;gap:14px;margin-bottom:28px}.logo{display:grid;place-items:center;width:56px;height:56px;background:#194e38;color:#ffe1a0;border-radius:15px;font-size:30px;font-weight:750}.brand strong{display:block;font-size:25px}.brand small{color:#506857;letter-spacing:2px}section{padding:clamp(24px,5vw,44px);background:white;border:1px solid #cfddcf;border-radius:22px;box-shadow:0 10px 40px #1e4c3210}h1{font-size:clamp(26px,5vw,36px);line-height:1.35;margin:18px 0}p{font-size:17px;line-height:1.9;color:#435c4e}.badge{display:inline-block;background:#d4efdf;color:#165336;border-radius:30px;padding:8px 15px;font-weight:700}.chart{background:#f7faf5;border-radius:16px;padding:15px;margin:24px 0}.chart svg{display:block;width:100%;height:auto}figcaption{font-size:14px;color:#53664e;margin-top:12px}.checks{padding:0;list-style:none}.checks li{padding:13px 0;border-bottom:1px solid #e2e9df;line-height:1.7;font-size:16px}.checks b{color:#176b43}button{width:100%;padding:16px;border:0;border-radius:12px;background:#1e6646;color:white;font:700 18px system-ui;cursor:pointer;margin:18px 0 8px}button:focus-visible{outline:3px solid #b57a17;outline-offset:4px}.hint{font-size:14px;color:#576958}.result{min-height:28px;color:#176b43;font-weight:700}footer{font-size:14px;line-height:1.8;color:#526b59;margin:22px 4px}code{overflow-wrap:anywhere;font-size:14px}
+</style>
+</head>
+<body><main>
+<div class="brand"><div class="logo">金</div><div><strong>金汇</strong><small>JINHUI OBSERVER</small></div></div>
+<section><span class="badge">访问测试 · 版本 2026-10-27</span><h1>如果你看到这里，<br>测试首页已成功打开。</h1><p>这是金汇迁移前的访问测试页，用于确认手机和电脑能否打开 GitHub Pages。完整行情、统计日历和密码入口尚未上线。</p>
+<figure class="chart"><svg viewBox="0 0 640 160" role="img" aria-label="图形显示测试，非真实行情"><path d="M15 35H625M15 80H625M15 125H625" stroke="#d5dfcf" stroke-dasharray="5 6"/><path d="M15 130L65 100L115 110L165 72L215 90L265 55L315 65L365 35L415 49L465 25L515 45L565 19L625 30" stroke="#b4790b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><figcaption>图形加载示意 · 不是黄金或欧元价格</figcaption></figure>
+<ul class="checks"><li><b>① 页面文字：</b>能看到本页，即已加载首页。</li><li><b>② 图形显示：</b>上方应显示一条金色折线。</li><li><b>③ 交互功能：</b>点击下面按钮，查看是否出现成功提示。</li></ul>
+<button id="test" type="button">点击测试交互</button><div id="result" class="result" role="status" aria-live="polite">等待点击测试</div><noscript><p>当前浏览器未运行 JavaScript。请使用手机系统浏览器、Chrome、Edge 或 Safari 打开。</p></noscript>
+<p class="hint">建议用同一部手机分别测试 Wi-Fi 和手机流量。如果在聊天软件里无法打开，请复制网址到系统浏览器再试。此页面不收集或上传测试结果，请把结果直接告诉分享者。</p></section>
+<footer>本页不含访问密码、银行账号或真实行情数据。测试成功仅代表当前设备和网络可访问，不能代表所有地区均可访问。</footer>
+</main><script>document.getElementById('test').addEventListener('click',function(){document.getElementById('result').textContent='✓ 交互测试通过 · '+new Date().toLocaleTimeString('zh-CN');this.textContent='再次测试';});</script></body></html>
