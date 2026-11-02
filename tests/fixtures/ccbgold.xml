@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReferencePriceSettlements>
+<ReferencePriceSettlement name="1">
+<PM_Txn_Vrty_Cd>01</PM_Txn_Vrty_Cd>
+<CcyCd>156</CcyCd>
+<Cst_Buy_Prc>886.99</Cst_Buy_Prc>
+<MdlRate>886.74</MdlRate>
+<Cst_Sell_Prc>886.49</Cst_Sell_Prc>
+<Tms>2026-10-20 21:44:49.659</Tms>
+</ReferencePriceSettlement>
+<ReferencePriceSettlement name="2">
+<PM_Txn_Vrty_Cd>02</PM_Txn_Vrty_Cd>
+<CcyCd>156</CcyCd>
+<Cst_Buy_Prc>886.79</Cst_Buy_Prc>
+<MdlRate>886.54</MdlRate>
+<Cst_Sell_Prc>886.29</Cst_Sell_Prc>
+<Tms>2026-10-20 21:44:49.659</Tms>
+</ReferencePriceSettlement>
+<ReferencePriceSettlement name="3">
+<PM_Txn_Vrty_Cd>15</PM_Txn_Vrty_Cd>
+<CcyCd>840</CcyCd>
+<Cst_Buy_Prc>4130.87</Cst_Buy_Prc>
+<MdlRate>4129.67</MdlRate>
+<Cst_Sell_Prc>4128.47</Cst_Sell_Prc>
+<Tms>2026-10-20 21:44:49.659</Tms>
+</ReferencePriceSettlement>
+<ReferencePriceSettlement name="4">
+<PM_Txn_Vrty_Cd>16</PM_Txn_Vrty_Cd>
+<CcyCd>840</CcyCd>
+<Cst_Buy_Prc>4130.87</Cst_Buy_Prc>
+<MdlRate>4129.67</MdlRate>
+<Cst_Sell_Prc>4128.47</Cst_Sell_Prc>
+<Tms>2026-10-20 21:44:49.659</Tms>
+</ReferencePriceSettlement>
+<ReferencePriceSettlement name="5">
+<PM_Txn_Vrty_Cd>17</PM_Txn_Vrty_Cd>
+<CcyCd>840</CcyCd>
+<Cst_Buy_Prc>57.481</Cst_Buy_Prc>
+<MdlRate>57.431</MdlRate>
+<Cst_Sell_Prc>57.381</Cst_Sell_Prc>
+<Tms>2026-10-20 21:44:49.871</Tms>
+</ReferencePriceSettlement>
+<ReferencePriceSettlement name="6">
+<PM_Txn_Vrty_Cd>18</PM_Txn_Vrty_Cd>
+<CcyCd>840</CcyCd>
+<Cst_Buy_Prc>57.481</Cst_Buy_Prc>
+<MdlRate>57.431</MdlRate>
+<Cst_Sell_Prc>57.381</Cst_Sell_Prc>
+<Tms>2026-10-20 21:44:49.871</Tms>
+</ReferencePriceSettlement>
+<ReferencePriceSettlement name="7">
+<PM_Txn_Vrty_Cd>19</PM_Txn_Vrty_Cd>
+<CcyCd>840</CcyCd>
+<Cst_Buy_Prc>1647.16</Cst_Buy_Prc>
+<MdlRate>1643.56</MdlRate>
+<Cst_Sell_Prc>1639.96</Cst_Sell_Prc>
+<Tms>2026-10-20 21:44:48.802</Tms>
+</ReferencePriceSettlement>
+<ReferencePriceSettlement name="8">
+<PM_Txn_Vrty_Cd>20</PM_Txn_Vrty_Cd>
+<CcyCd>840</CcyCd>
+<Cst_Buy_Prc>1647.16</Cst_Buy_Prc>
+<MdlRate>1643.56</MdlRate>
+<Cst_Sell_Prc>1639.96</Cst_Sell_Prc>
+<Tms>2026-10-20 21:44:48.802</Tms>
+</ReferencePriceSettlement>
+<ReferencePriceSettlement name="9">
+<PM_Txn_Vrty_Cd>21</PM_Txn_Vrty_Cd>
+<CcyCd>156</CcyCd>
+<Cst_Buy_Prc>12.34</Cst_Buy_Prc>
+<MdlRate>12.33</MdlRate>
+<Cst_Sell_Prc>12.32</Cst_Sell_Prc>
+<Tms>2026-10-20 21:44:49.870</Tms>
+</ReferencePriceSettlement>
+<ReferencePriceSettlement name="10">
+<PM_Txn_Vrty_Cd>22</PM_Txn_Vrty_Cd>
+<CcyCd>156</CcyCd>
+<Cst_Buy_Prc>354.37</Cst_Buy_Prc>
+<MdlRate>352.87</MdlRate>
+<Cst_Sell_Prc>351.37</Cst_Sell_Prc>
+<Tms>2026-10-20 21:44:48.803</Tms>
+</ReferencePriceSettlement>
+<ReferencePriceSettlement name="11">
+<PM_Txn_Vrty_Cd>23</PM_Txn_Vrty_Cd>
+<CcyCd>156</CcyCd>
+<Cst_Buy_Prc>893.16</Cst_Buy_Prc>
+<MdlRate>889</MdlRate>
+<Cst_Sell_Prc>886</Cst_Sell_Prc>
+<Tms>2026-10-20 10:30:00.000</Tms>
+</ReferencePriceSettlement>
+</ReferencePriceSettlements>

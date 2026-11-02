@@ -1,0 +1,1 @@
+{"compilerOptions":{"target":"ES2022","lib":["dom","esnext"],"module":"esnext","moduleResolution":"bundler","jsx":"react-jsx","allowJs":true,"allowImportingTsExtensions":true,"strict":true,"noEmit":true,"skipLibCheck":true,"esModuleInterop":true},"include":["src/**/*"]}
