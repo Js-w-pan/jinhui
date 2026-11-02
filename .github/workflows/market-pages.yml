@@ -1,0 +1,60 @@
+name: 更新行情并发布金汇
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # UTC :17 each hour; GitHub may delay scheduled runs.
+    - cron: '17 * * * *'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: jinhui-pages
+  cancel-in-progress: false
+jobs:
+  update-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: 检查访问密码配置
+        env:
+          JINHUI_PASSWORD: ${{ secrets.JINHUI_PASSWORD }}
+        run: node -e "if (!process.env.JINHUI_PASSWORD) { console.error('请在 Settings > Secrets and variables > Actions 新建 JINHUI_PASSWORD，值为当前网站访问密码。'); process.exit(1); }"
+      - name: 验证计算、采样与加密
+        run: node --test tests/*.test.mjs
+      - name: 同步官方行情并加密保存
+        env:
+          JINHUI_PASSWORD: ${{ secrets.JINHUI_PASSWORD }}
+        run: node scripts/update-market.mjs
+      - name: 保存每日采样记录
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/market.enc.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update encrypted official market observations"
+            git push origin HEAD:main
+          fi
+      - name: 准备网站文件
+        run: node scripts/package-site.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: update-and-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 发布网站
+        id: deployment
+        uses: actions/deploy-pages@v4
